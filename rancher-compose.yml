@@ -1,0 +1,23 @@
+version: '2'
+services:
+  jenkins-plugins:
+    metadata:
+      plugins: "credentials\ngit\ngit-client\ngithub\ngithub-api\ngithub-oauth\ngreenballs\n\
+        junit\nplain-credentials\nscm-api\nssh-credentials\nssh-slaves\nswarm\ngit\
+        \ parameter\nparameterized trigger\ncopy artifact\nbuild pipeline \nmask passwords\n"
+    scale: 1
+    start_on_create: true
+  jenkins-primary:
+    metadata:
+      plugins: "credentials\ngit\ngit-client\ngithub\ngithub-api\ngithub-oauth\ngreenballs\n\
+        junit\nplain-credentials\nscm-api\nssh-credentials\nssh-slaves\nswarm\ngit\
+        \ parameter\nparameterized trigger\ncopy artifact\nbuild pipeline \nmask passwords\n"
+    scale: 1
+    start_on_create: true
+  jenkins-datavolume:
+    metadata:
+      plugins: "credentials\ngit\ngit-client\ngithub\ngithub-api\ngithub-oauth\ngreenballs\n\
+        junit\nplain-credentials\nscm-api\nssh-credentials\nssh-slaves\nswarm\ngit\
+        \ parameter\nparameterized trigger\ncopy artifact\nbuild pipeline \nmask passwords\n"
+    scale: 1
+    start_on_create: true
