@@ -3,7 +3,7 @@ services:
   jenkins-plugins:
     image: rancher/jenkins-plugins:v0.1.1
   jenkins-primary:
-    image: jenkins/jenkins:2.92
+    image: apyshonkin/dyenkins 
     entrypoint:
     - /usr/share/jenkins/rancher/jenkins.sh
     volumes_from:
